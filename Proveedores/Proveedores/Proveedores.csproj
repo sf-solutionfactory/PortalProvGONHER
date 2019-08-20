@@ -1,0 +1,983 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8CB112E4-1D31-411F-8DFF-CF5B1373BF57}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proveedores</RootNamespace>
+    <AssemblyName>Proveedores</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML, Version=0.76.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.76.0\lib\net40-client\ClosedXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="sapnco, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.4.5.6\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms, Version=4.5.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.4.5.6\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net45\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="administrator\AdministrarSociedades.aspx" />
+    <Content Include="administrator\AsignarRol.aspx" />
+    <Content Include="administrator\CambiarContrasena.aspx" />
+    <Content Include="administrator\CargaAutomaticaProv.aspx" />
+    <Content Include="administrator\config.aspx" />
+    <Content Include="administrator\DeleteAndUpdate.aspx" />
+    <Content Include="administrator\DesvincularGrupoNoticia.aspx" />
+    <Content Include="administrator\DesvincularGrupoProv.aspx" />
+    <Content Include="administrator\GrupoNoticia.aspx" />
+    <Content Include="administrator\index.aspx" />
+    <Content Include="administrator\instancia.aspx" />
+    <Content Include="administrator\instanciaCN.aspx" />
+    <Content Include="administrator\MostrarNoticias.aspx" />
+    <Content Include="administrator\MostrarPantalla.aspx" />
+    <Content Include="administrator\MostrarPertenencia.aspx" />
+    <Content Include="administrator\Noticia.aspx" />
+    <Content Include="administrator\Proveedores.aspx" />
+    <Content Include="administrator\Roles.aspx" />
+    <Content Include="administrator\Seguridad.aspx" />
+    <Content Include="administrator\usuario.aspx" />
+    <Content Include="administrator\valXML.aspx" />
+    <Content Include="css\blitzer\images\animated-overlay.gif" />
+    <Content Include="css\blitzer\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="css\blitzer\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="css\blitzer\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="css\blitzer\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="css\blitzer\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\blitzer\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="css\blitzer\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="css\blitzer\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="css\blitzer\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="css\blitzer\images\ui-icons_004276_256x240.png" />
+    <Content Include="css\blitzer\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="css\blitzer\jquery-ui-1.10.3.custom.css" />
+    <Content Include="css\blitzer\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="css\EstiloLogin.css" />
+    <Content Include="css\Estilo.css" />
+    <Content Include="css\EstiloSortTables.css" />
+    <Content Include="css\EstiloTabla.css" />
+    <Content Include="css\images\cargar_xml_2.png" />
+    <Content Include="css\images\fl_back.png" />
+    <Content Include="css\images\fl_izq.png" />
+    <Content Include="css\images\fl_next.png" />
+    <Content Include="css\images\ico-carga_auto.png" />
+    <Content Include="css\images\ico-bloq.png" />
+    <Content Include="css\images\bottom-bg.png" />
+    <Content Include="css\images\cerrar.png" />
+    <Content Include="css\images\color.png" />
+    <Content Include="css\images\ECE9E5.png" />
+    <Content Include="css\images\estatus-cancelado.png" />
+    <Content Include="css\images\estatus-correcto.png" />
+    <Content Include="css\images\estatus-error.png" />
+    <Content Include="css\images\estatus-estructura_invalida.png" />
+    <Content Include="css\images\estatus-no_coincide.png" />
+    <Content Include="css\images\estatus-sin-accion.png" />
+    <Content Include="css\images\filtrar.png" />
+    <Content Include="css\images\filtrar_15x15.png" />
+    <Content Include="css\images\fondo_01.gif" />
+    <Content Include="css\images\fondo_lineas.png" />
+    <Content Include="css\images\ico-candado-abierto.png" />
+    <Content Include="css\images\ico-contraer.png" />
+    <Content Include="css\images\ico-contraer_todo.png" />
+    <Content Include="css\images\ico-expandir.png" />
+    <Content Include="css\images\ico-expandir_todo.png" />
+    <Content Include="css\images\ico-usuario.png" />
+    <Content Include="css\images\nav-bg.png" />
+    <Content Include="css\images\OrdenTabla\asc.gif" />
+    <Content Include="css\images\OrdenTabla\bg.gif" />
+    <Content Include="css\images\OrdenTabla\desc.gif" />
+    <Content Include="css\images\Unattach.png" />
+    <Content Include="css\images\variosXML.png" />
+    <Content Include="css\img\load.gif" />
+    <Content Include="css\img\aqua_dayDown.gif" />
+    <Content Include="css\img\aqua_dayNormal.gif" />
+    <Content Include="css\img\aqua_dayOver.gif" />
+    <Content Include="css\img\armygreen_dayDown.gif" />
+    <Content Include="css\img\armygreen_dayNormal.gif" />
+    <Content Include="css\img\armygreen_dayOver.gif" />
+    <Content Include="css\img\bananasplit_dayDown.gif" />
+    <Content Include="css\img\bananasplit_dayNormal.gif" />
+    <Content Include="css\img\bananasplit_dayOver.gif" />
+    <Content Include="css\img\beige_dayDown.gif" />
+    <Content Include="css\img\beige_dayNormal.gif" />
+    <Content Include="css\img\beige_dayOver.gif" />
+    <Content Include="css\img\boxBottomLeftCorner.png" />
+    <Content Include="css\img\boxBottomRightCorner.png" />
+    <Content Include="css\img\boxSideWallPx.gif" />
+    <Content Include="css\img\boxSideWallPx.png" />
+    <Content Include="css\img\boxTopLeftCorner.png" />
+    <Content Include="css\img\boxTopPx.gif" />
+    <Content Include="css\img\boxTopPx.png" />
+    <Content Include="css\img\boxTopRightCorner.png" />
+    <Content Include="css\img\closeButton_down.gif" />
+    <Content Include="css\img\closeButton_normal.gif" />
+    <Content Include="css\img\closeButton_over.gif" />
+    <Content Include="css\img\deepblue_dayDown.gif" />
+    <Content Include="css\img\deepblue_dayNormal.gif" />
+    <Content Include="css\img\deepblue_dayOver.gif" />
+    <Content Include="css\img\greenish_dayDown.gif" />
+    <Content Include="css\img\greenish_dayNormal.gif" />
+    <Content Include="css\img\greenish_dayOver.gif" />
+    <Content Include="css\img\lightgreen_dayDown.gif" />
+    <Content Include="css\img\lightgreen_dayNormal.gif" />
+    <Content Include="css\img\lightgreen_dayOver.gif" />
+    <Content Include="css\img\monthBackward_down.gif" />
+    <Content Include="css\img\monthBackward_normal.gif" />
+    <Content Include="css\img\monthBackward_over.gif" />
+    <Content Include="css\img\monthForward_down.gif" />
+    <Content Include="css\img\monthForward_normal.gif" />
+    <Content Include="css\img\monthForward_over.gif" />
+    <Content Include="css\img\ocean_blue_dayDown.gif" />
+    <Content Include="css\img\ocean_blue_dayNormal.gif" />
+    <Content Include="css\img\ocean_blue_dayOver.gif" />
+    <Content Include="css\img\orange_dayDown.gif" />
+    <Content Include="css\img\orange_dayNormal.gif" />
+    <Content Include="css\img\orange_dayOver.gif" />
+    <Content Include="css\img\peppermint_dayDown.gif" />
+    <Content Include="css\img\peppermint_dayNormal.gif" />
+    <Content Include="css\img\peppermint_dayOver.gif" />
+    <Content Include="css\img\pink_dayDown.gif" />
+    <Content Include="css\img\pink_dayNormal.gif" />
+    <Content Include="css\img\pink_dayOver.gif" />
+    <Content Include="css\img\purple_dayDown.gif" />
+    <Content Include="css\img\purple_dayNormal.gif" />
+    <Content Include="css\img\purple_dayOver.gif" />
+    <Content Include="css\img\torqoise_dayDown.gif" />
+    <Content Include="css\img\torqoise_dayNormal.gif" />
+    <Content Include="css\img\torqoise_dayOver.gif" />
+    <Content Include="css\img\yearBackward_down.gif" />
+    <Content Include="css\img\yearBackward_normal.gif" />
+    <Content Include="css\img\yearBackward_over.gif" />
+    <Content Include="css\img\yearForward_down.gif" />
+    <Content Include="css\img\yearForward_normal.gif" />
+    <Content Include="css\img\yearForward_over.gif" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.colorbox.css" />
+    <Content Include="css\images\ico-actualizar.png" />
+    <Content Include="css\DatePick_ltr.min.css" />
+    <Content Include="css\Orden.css" />
+    <Content Include="css\passSeguro\accept.png" />
+    <Content Include="css\passSeguro\cancel.png" />
+    <Content Include="css\passSeguro\script.js" />
+    <Content Include="css\passSeguro\stylePassSeguro.css" />
+    <Content Include="css\passSeguro\ValidaPassSeguro.js" />
+    <Content Include="css\saw2.jpg" />
+    <Content Include="css\smoothness\images\animated-overlay.gif" />
+    <Content Include="css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\smoothness\jquery-ui-1.10.4.custom.css" />
+    <Content Include="css\smoothness\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="css\SortableGrupoNoticia.css" />
+    <Content Include="css\SortTable.css" />
+    <Content Include="errorGenerico.html" />
+    <Content Include="images\30x30.png" />
+    <Content Include="css\images\fl_der.png" />
+    <Content Include="images\Gonher_logo.png" />
+    <Content Include="images\ico-datos_maestros.png" />
+    <Content Include="images\ico-sf-1-step.gif" />
+    <Content Include="images\ico-sf-2-steps.gif" />
+    <Content Include="images\360.gif" />
+    <Content Include="images\animacionArcaPS.gif" />
+    <Content Include="images\candadoCerrado.png" />
+    <Content Include="css\images\cargar_xml.png" />
+    <Content Include="css\images\estatus-detalle.png" />
+    <Content Include="images\fichero.png" />
+    <Content Include="images\ico-ListaGrupo.png" />
+    <Content Include="images\ico-Volver.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\loadingDots.gif" />
+    <Content Include="images\Logo_gonher.jpg" />
+    <Content Include="css\images\ico-cerrar.png" />
+    <Content Include="images\ico-ayuda.png" />
+    <Content Include="images\sap.png" />
+    <Content Include="images\sat.png" />
+    <Content Include="images\Trascam_logo.png" />
+    <Content Include="js\AddDeleteTable.js" />
+    <Content Include="js\BusquedaTabla.js" />
+    <Content Include="js\CargaAutomatica.js" />
+    <Content Include="js\DeshabilitarClicDerecho.js" />
+    <Content Include="js\EliminarFila.js" />
+    <Content Include="js\EliminarFilaProv.js" />
+    <Content Include="js\Estilo.js" />
+    <Content Include="js\Gen.js" />
+    <Content Include="js\jquery.simpletip-1.3.1.js" />
+    <Content Include="js\jquery.tablesorter.js" />
+    <Content Include="js\ValidarCaracteresEntrada.js" />
+    <Content Include="js\jsCalendario.js" />
+    <Content Include="js\jsCalendarP.js" />
+    <Content Include="js\jsDatePick.min.1.3.js" />
+    <Content Include="js\lib\plupload\moxie.js" />
+    <Content Include="js\lib\plupload\moxie.min.js" />
+    <Content Include="js\lib\plupload\Moxie.swf" />
+    <Content Include="js\lib\plupload\Moxie.xap" />
+    <Content Include="js\lib\plupload\plupload.dev.js" />
+    <Content Include="js\lib\plupload\plupload.full.min.js" />
+    <Content Include="js\lib\plupload\plupload.min.js" />
+    <Content Include="js\lib\plupload\queue\css\jquery.plupload.queue.css" />
+    <Content Include="js\lib\plupload\queue\img\backgrounds.gif" />
+    <Content Include="js\lib\plupload\queue\img\buttons-disabled.png" />
+    <Content Include="js\lib\plupload\queue\img\buttons.png" />
+    <Content Include="js\lib\plupload\queue\img\delete.gif" />
+    <Content Include="js\lib\plupload\queue\img\done.gif" />
+    <Content Include="js\lib\plupload\queue\img\error.gif" />
+    <Content Include="js\lib\plupload\queue\img\throbber.gif" />
+    <Content Include="js\lib\plupload\queue\img\transp50.png" />
+    <Content Include="js\lib\plupload\queue\jquery.plupload.queue.min.js" />
+    <Content Include="js\addStyle.js" />
+    <Content Include="js\SortTable\jquery-1.10.2.js" />
+    <Content Include="js\SortTable\jquery-ui.css" />
+    <Content Include="js\SortTable\jquery-ui.js" />
+    <Content Include="js\SortTable\style.css" />
+    <Content Include="js\validarCalendario.js" />
+    <Content Include="js\validarEmail.js" />
+    <Content Include="js\validarNotNull.js" />
+    <Content Include="portal\datosMaestros.aspx" />
+    <Content Include="portal\DelAndUpd.aspx" />
+    <Content Include="portal\facturasCarga.aspx" />
+    <Content Include="portal\facturasMasiva.aspx" />
+    <Content Include="portal\facturasResumen.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Default.aspx" />
+    <Content Include="js\jquery-1.9.1.js" />
+    <Content Include="js\jquery-ui-1.10.3.custom.js" />
+    <Content Include="js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="pagMaestra\MtrProveedor.Master" />
+    <Content Include="pagMaestra\MtrInicio.Master" />
+    <Content Include="portal\facturasDet.aspx" />
+    <Content Include="portal\facturas.aspx" />
+    <Content Include="portal\fv60Carga.aspx" />
+    <Content Include="portal\fv60Det.aspx" />
+    <Content Include="portal\Inicio.aspx" />
+    <Content Include="portal\pagos.aspx" />
+    <Content Include="js\modernizr-2.5.3.js" />
+    <Content Include="Global.asax" />
+    <Content Include="portal\pagosFiltro.aspx" />
+    <Content Include="portal\prtAbiertas.aspx" />
+    <Content Include="portal\usuarios.aspx" />
+    <Content Include="portal\factFV60.aspx" />
+    <Content Include="Properties\DataSources\PEntidades.SrvSATConsultaCFDI.Acuse.datasource" />
+    <Content Include="pagMaestra\MtrAdministrador.Master" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Perfil1_Luis.pubxml" />
+    <Content Include="scripts\tinymce\langs\es_MX.js" />
+    <Content Include="scripts\tinymce\license.txt" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\colorpicker\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\css\dialog.css" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\buttons.png" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\icons.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\items.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\menu_arrow.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\menu_check.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\progress.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\img\tabs.gif" />
+    <Content Include="scripts\tinymce\plugins\compat3x\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\tiny_mce_popup.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\utils\editable_selects.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\utils\form_utils.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\utils\mctabs.js" />
+    <Content Include="scripts\tinymce\plugins\compat3x\utils\validate.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\example\dialog.html" />
+    <Content Include="scripts\tinymce\plugins\example\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\example_dependency\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\hr\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\imagetools\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\layer\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\paste\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\print\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\template\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\textcolor\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\textpattern\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\address.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\article.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\aside.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\blockquote.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\div.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\dl.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\figure.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h1.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h2.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h3.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h4.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h5.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\h6.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\hgroup.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\ol.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\p.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\pre.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\section.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\img\ul.gif" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.js" />
+    <Content Include="scripts\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="scripts\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="scripts\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce.json" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce-small.json" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="scripts\tinymce\skins\lightgray\fonts\readme.md" />
+    <Content Include="scripts\tinymce\langs\readme.md" />
+    <Content Include="scripts\tinymce\skins\lightgray\skin.json" />
+    <Content Include="scripts\tinymce\skins\lightgray\Variables.less" />
+    <None Include="Service References\SrvSAPUProv\configuration91.svcinfo" />
+    <None Include="Service References\SrvSAPUProv\configuration.svcinfo" />
+    <Content Include="scripts\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="scripts\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="scripts\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="scripts\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="scripts\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="scripts\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="scripts\tinymce\themes\modern\theme.js" />
+    <Content Include="scripts\tinymce\themes\modern\theme.min.js" />
+    <Content Include="scripts\tinymce\tinymce.js" />
+    <Content Include="scripts\tinymce\tinymce.min.js" />
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UDATA_MASTERResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UFAC_CARGADASResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UFAC_LISTPAResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UFAC_VERIFICARResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UFAC_VERIFMIR7Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UPAGOSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_UPARTIDAS_ABIERTASResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_URES_PROVEEDORESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_URES_SOCIEDADESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\SrvSAPUProv\Proveedores.SrvSAPUProv.Z_URFCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Service References\SrvSAPUProv\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\SrvSAPUProv\zws_uproveedores.wsdl" />
+    <None Include="Service References\SrvSATConsultaCFDI\configuration91.svcinfo" />
+    <None Include="Service References\SrvSATConsultaCFDI\configuration.svcinfo" />
+    <None Include="Service References\SrvSATConsultaCFDI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrator\AdministrarSociedades.aspx.cs">
+      <DependentUpon>AdministrarSociedades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\AdministrarSociedades.aspx.designer.cs">
+      <DependentUpon>AdministrarSociedades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\AsignarRol.aspx.cs">
+      <DependentUpon>AsignarRol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\AsignarRol.aspx.designer.cs">
+      <DependentUpon>AsignarRol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\CambiarContrasena.aspx.cs">
+      <DependentUpon>CambiarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\CambiarContrasena.aspx.designer.cs">
+      <DependentUpon>CambiarContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\CargaAutomaticaProv.aspx.cs">
+      <DependentUpon>CargaAutomaticaProv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\CargaAutomaticaProv.aspx.designer.cs">
+      <DependentUpon>CargaAutomaticaProv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\config.aspx.cs">
+      <DependentUpon>config.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\config.aspx.designer.cs">
+      <DependentUpon>config.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\DeleteAndUpdate.aspx.cs">
+      <DependentUpon>DeleteAndUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\DeleteAndUpdate.aspx.designer.cs">
+      <DependentUpon>DeleteAndUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\DesvincularGrupoNoticia.aspx.cs">
+      <DependentUpon>DesvincularGrupoNoticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\DesvincularGrupoNoticia.aspx.designer.cs">
+      <DependentUpon>DesvincularGrupoNoticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\DesvincularGrupoProv.aspx.cs">
+      <DependentUpon>DesvincularGrupoProv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\DesvincularGrupoProv.aspx.designer.cs">
+      <DependentUpon>DesvincularGrupoProv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\GrupoNoticia.aspx.cs">
+      <DependentUpon>GrupoNoticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\GrupoNoticia.aspx.designer.cs">
+      <DependentUpon>GrupoNoticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\instancia.aspx.cs">
+      <DependentUpon>instancia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\instancia.aspx.designer.cs">
+      <DependentUpon>instancia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\instanciaCN.aspx.cs">
+      <DependentUpon>instanciaCN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\instanciaCN.aspx.designer.cs">
+      <DependentUpon>instanciaCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\MostrarNoticias.aspx.cs">
+      <DependentUpon>MostrarNoticias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\MostrarNoticias.aspx.designer.cs">
+      <DependentUpon>MostrarNoticias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\MostrarPantalla.aspx.cs">
+      <DependentUpon>MostrarPantalla.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\MostrarPantalla.aspx.designer.cs">
+      <DependentUpon>MostrarPantalla.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\MostrarPertenencia.aspx.cs">
+      <DependentUpon>MostrarPertenencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\MostrarPertenencia.aspx.designer.cs">
+      <DependentUpon>MostrarPertenencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\Noticia.aspx.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\Noticia.aspx.designer.cs">
+      <DependentUpon>Noticia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\Proveedores.aspx.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\Proveedores.aspx.designer.cs">
+      <DependentUpon>Proveedores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\Seguridad.aspx.cs">
+      <DependentUpon>Seguridad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\Seguridad.aspx.designer.cs">
+      <DependentUpon>Seguridad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\usuario.aspx.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\usuario.aspx.designer.cs">
+      <DependentUpon>usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="administrator\valXML.aspx.cs">
+      <DependentUpon>valXML.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="administrator\valXML.aspx.designer.cs">
+      <DependentUpon>valXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagMaestra\MtrAdministrador.Master.cs">
+      <DependentUpon>MtrAdministrador.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagMaestra\MtrAdministrador.Master.designer.cs">
+      <DependentUpon>MtrAdministrador.Master</DependentUpon>
+    </Compile>
+    <Compile Include="portal\datosMaestros.aspx.cs">
+      <DependentUpon>datosMaestros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\datosMaestros.aspx.designer.cs">
+      <DependentUpon>datosMaestros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\DelAndUpd.aspx.cs">
+      <DependentUpon>DelAndUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\DelAndUpd.aspx.designer.cs">
+      <DependentUpon>DelAndUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\facturasCarga.aspx.cs">
+      <DependentUpon>facturasCarga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\facturasCarga.aspx.designer.cs">
+      <DependentUpon>facturasCarga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\facturasMasiva.aspx.cs">
+      <DependentUpon>facturasMasiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\facturasMasiva.aspx.designer.cs">
+      <DependentUpon>facturasMasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\facturasResumen.aspx.cs">
+      <DependentUpon>facturasResumen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\facturasResumen.aspx.designer.cs">
+      <DependentUpon>facturasResumen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pagMaestra\MtrInicio.Master.cs">
+      <DependentUpon>MtrInicio.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagMaestra\MtrInicio.Master.designer.cs">
+      <DependentUpon>MtrInicio.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pagMaestra\MtrProveedor.Master.cs">
+      <DependentUpon>MtrProveedor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pagMaestra\MtrProveedor.Master.designer.cs">
+      <DependentUpon>MtrProveedor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="portal\facturasDet.aspx.cs">
+      <DependentUpon>facturasDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\facturasDet.aspx.designer.cs">
+      <DependentUpon>facturasDet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\facturas.aspx.cs">
+      <DependentUpon>facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\facturas.aspx.designer.cs">
+      <DependentUpon>facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\fv60Carga.aspx.cs">
+      <DependentUpon>fv60Carga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\fv60Carga.aspx.designer.cs">
+      <DependentUpon>fv60Carga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\fv60Det.aspx.cs">
+      <DependentUpon>fv60Det.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\fv60Det.aspx.designer.cs">
+      <DependentUpon>fv60Det.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\pagos.aspx.cs">
+      <DependentUpon>pagos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\pagos.aspx.designer.cs">
+      <DependentUpon>pagos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\pagosFiltro.aspx.cs">
+      <DependentUpon>pagosFiltro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\pagosFiltro.aspx.designer.cs">
+      <DependentUpon>pagosFiltro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\prtAbiertas.aspx.cs">
+      <DependentUpon>prtAbiertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\prtAbiertas.aspx.designer.cs">
+      <DependentUpon>prtAbiertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\usuarios.aspx.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\usuarios.aspx.designer.cs">
+      <DependentUpon>usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal\factFV60.aspx.cs">
+      <DependentUpon>factFV60.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal\factFV60.aspx.designer.cs">
+      <DependentUpon>factFV60.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SrvSAPUProv\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SrvSATConsultaCFDI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="portal\Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService.wsdl" />
+    <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SrvSATConsultaCFDI\ConsultaCFDIService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PEntidades\PEntidades.csproj">
+      <Project>{0f8aa762-ffeb-4044-8aa8-980dda28a04f}</Project>
+      <Name>PEntidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PNegocio\PNegocio.csproj">
+      <Project>{26c0c58f-2d71-4ca5-8427-5a25f9dec028}</Project>
+      <Name>PNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SrvSAPUProv\" />
+    <WCFMetadataStorage Include="Service References\SrvSATConsultaCFDI\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2731</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1598/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

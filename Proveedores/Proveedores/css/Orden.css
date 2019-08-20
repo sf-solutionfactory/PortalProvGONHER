@@ -1,0 +1,51 @@
+﻿        .paraDiseno {
+            margin-left: 7%;
+            margin-top: 1%;
+            width: auto;
+        }
+
+        #tablaResultados {
+            margin-left: 7%;
+       }
+
+        td {
+            height: 2.5em;
+        }
+
+        table {
+            margin-left: 5%;
+       }
+
+            table.tblFm {
+               /*margin-left: -5%;*/ 
+            }
+
+        .plusBtn {
+            width: 20%;
+            display: inline-block;
+	        margin-right: 5.7%;
+       }
+
+        .chk {
+        }
+
+        .link {
+            color:#0174DF; 
+            cursor:pointer;
+        }
+
+        .link:hover { 
+            text-decoration: underline;
+        }
+
+         .ampliar {
+            width: 15em;
+        }
+
+         .ampliar2 {
+             width: 8em;
+        }
+        #mceu_19-body{
+            visibility:hidden;
+        }
+         

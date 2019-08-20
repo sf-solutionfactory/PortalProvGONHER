@@ -1,0 +1,651 @@
+/* 
+    Autor : Luis Jesús Castro Guerrero
+    Fecha : miercoles 5 de marzo 2014, 10:24 PM.
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+body, html {
+    margin: 0px;
+    min-width: 1124px;
+}
+
+html {
+    border-top: 8px solid #BDBDBD;
+    background: url(images/fondo_lineas.png) no-repeat center -10px fixed;
+}
+
+#divHeader {
+    border-bottom: 2px solid #B3B3B3;
+}
+
+    #divHeader div {
+        display: inline-block;
+    }
+
+    #divHeader img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #divHeader #divInfSesion {
+        position: absolute;
+        right: 0;
+        float: right;
+        color: #4D4D4D;
+    }
+
+        #divHeader #divInfSesion label {
+            display: block;
+            text-align: right;
+            z-index: 100;
+        }
+
+            #divHeader #divInfSesion label:first-child {
+                border-bottom: 1px solid #B3B3B3;
+                padding-left: 20px;
+            }
+
+#divFooter {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #333333;
+    color: #949494;
+    font-size: 10px;
+    font-weight: normal;
+    min-height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    #divFooter #right {
+        float: right;
+    }
+
+    #divFooter #left {
+        float: left;
+    }
+
+    #divFooter img {
+        margin-left: 10px;
+    }
+
+/* INICIO Sección del     MENU     MENU     MENU     MENU */
+#wrapMenu {
+    background: url(images/ECE9E5.png);
+    background-repeat: repeat-x;
+    margin-left: 30px;
+    height: 32px;
+    /*margin-bottom:-1px;*/
+}
+
+#menu {
+    list-style: none;
+    padding-left: 0px;
+}
+
+    #menu > li {
+        display: inline-block;
+        border-collapse: collapse;
+        border: none;
+        margin: -2px; /*Para quitar el espacio entre los items con el display: inline-block*/
+        /*width: 10.5em;*/
+    }
+
+    #menu li > a {
+        text-decoration: none;
+        color: #333333;
+        margin: 0px;
+        padding: 12px 10px 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border-top: solid 2px #B3B3B3;
+        background: #FFFFFF;
+        -webkit-transition: border .5s;
+        -ms-transition: border .5s;
+        /*width: 100%;*/
+    }
+
+    #menu li ul li .sub {
+        text-decoration: none;
+        color: #333333;
+        margin: 0px;
+        padding: 12px 10px 5px;
+        font-size: 14px;
+        font-weight: bold;
+        border-top: solid 2px #B3B3B3;
+        background: #FFFFFF;
+        -webkit-transition: border .5s;
+        -ms-transition: border .5s;
+    }
+
+    #menu li a {
+        /*background: #C82B40;*/
+    }
+
+        #menu li a span {
+            font-size: 13px;
+        }
+
+    #menu li ul li a span {
+        font-size: 12px;
+    }
+
+    #menu li:first-child a {
+        border-left: solid 1px #B3B3B3;
+    }
+
+    #menu li:last-child a {
+        border-right: solid 1px #B3B3B3;
+    }
+
+    #menu li a:hover, #menu .active > a {
+        border-top: solid 3px #0B2161;
+        background: #E5E4E4;
+        color: #0B2161;
+        margin-top: -2px;
+        /*width: 10.5em;*/
+    }
+/* FIN Sección del menú*/
+
+#divContenido {
+    text-align: justify;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+.h1 {
+    font-size: 24px;
+    color: #0B2161;
+    font-weight: bold;
+}
+
+[type="checkbox"] {
+}
+
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+[type="password"],
+[type="text"],
+select,
+.btn,
+textarea,
+.cargador {
+    font-family: Helvetica,Arial,"lucida grande",tahoma,verdana,arial,sans-serif;
+    border: solid 1px #6E6E6E;
+    padding: 5px 5px 3px;
+    min-width: 150px;
+    background: #E5E4E4;
+    margin-right: 0px;
+}
+
+.btn {
+    min-width: 100px;
+}
+
+    .btn:hover {
+        background: #BDBDBD;
+        /*font-weight:bolder;*/
+        cursor: pointer;
+    }
+
+[type="text"]:focus,
+[type="password"]:focus,
+.tblFm [type="password"]:focus,
+.tblFm [type="text"]:focus {
+    margin-left: 2px;
+    /*border-left:4px;*/
+}
+
+.cargador {
+    width: 79%;
+    overflow: hidden;
+}
+
+#pop-up {
+    background: #808080 url(images/fondo_lineas.png) no-repeat center -140px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#divValidaciones div {
+    display: inline;
+}
+
+#divValidaciones #divLogoSF {
+    margin-top: 10px;
+    text-align: center;
+}
+
+    #divValidaciones #divLogoSF img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+#divCargadorArchivo {
+    border-bottom: 2px solid #0B2161;
+    border-left: 3px solid #0B2161;
+    border-right: 3px solid #0B2161;
+    overflow: hidden;
+}
+
+#divImgUsuario {
+    height: 30px;
+    width: 32px;
+    background: url('images/ico-usuario.png');
+    background-repeat: no-repeat;
+}
+
+#divImgCandado {
+    height: 18px;
+    width: 32px;
+    background: url('images/ico-candado-abierto.png');
+    background-repeat: no-repeat;
+}
+
+#btnCerrarSesion {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+
+/*      INICIO      Estilos de ICONOs para los eststus de las facturas*/
+.icono {
+    height: 30px;
+    width: 30px;
+}
+
+.estatus-correcto {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-correcto.png");
+}
+
+.estatus-sin-accion {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-sin-accion.png");
+}
+
+.estatus-detalle {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-detalle.png");
+    cursor: pointer;
+}
+
+.estatus-cancelado {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-cancelado.png");
+}
+
+.estatus-estructura_invalida {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-estructura_invalida.png");
+}
+
+.estatus-error {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-error.png");
+}
+
+.estatus-no_coincide {
+    height: 30px;
+    width: 30px;
+    background: url("images/estatus-no_coincide.png");
+}
+
+.hrfCargadorXml {
+    height: 30px;
+    width: 30px;
+    background: url("images/cargar_xml.png");
+    cursor: pointer;
+}
+
+.hrfCargadorXmlClicked {
+    height: 30px;
+    width: 30px;
+    background: url("images/cargar_xml_2.png");
+    cursor: pointer;
+}
+
+.variosXML {
+    height: 30px;
+    width: 30px;
+    background: url("images/variosXML.png");
+    cursor: pointer;
+}
+
+.desadjuntarXML {
+    height: 30px;
+    width: 30px;
+    background: url("images/Unattach.png");
+    cursor: pointer;
+}
+
+.row_des_enca{
+    background-color: #48BFDA;
+}
+
+.row_des_res{
+    background-color: #BAFFBF;
+    padding:5px;
+}
+
+.row_des_det{
+    background-color: #EEEEEE;
+    padding:5px;
+}
+
+.fl_verde {
+    height: 30px;
+    width: 30px;
+    background: url("images/fl_der.png");
+    cursor: pointer;
+}
+
+.fl_azul {
+    height: 30px;
+    width: 30px;
+    background: url("images/fl_izq.png");
+    cursor: pointer;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.ico-actualizar {
+    height: 40px;
+    width: 40px;
+    background: url("images/ico-actualizar.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+
+/*      FIN     Estilos de ICONOs para los estatus de las facturas*/
+
+
+/*      INCICIO     Iconos*/
+.ico-contraer {
+    height: 30px;
+    width: 30px;
+    background: url("images/ico-contraer.png");
+}
+
+.ico-expandir {
+    height: 30px;
+    width: 30px;
+    background: url("images/ico-expandir.png");
+}
+
+.ico-expandir_Todo {
+    height: 30px;
+    width: 30px;
+    background: url("images/ico-expandir_todo.png");
+}
+
+.ico-contraer_Todo {
+    height: 30px;
+    width: 30px;
+    background: url("images/ico-contraer_todo.png");
+}
+
+.ico-cerrar {
+    height: 40px;
+    width: 60px;
+    background: url("images/cerrar.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 30px;
+    padding-top: 35px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+    /*      FIN     Iconos*/
+
+    .ico-cerrar:hover,
+    .ico-contraer_Todo:hover,
+    .ico-expandir_Todo:hover,
+    .ico-expandir:hover,
+    .ico-contraer:hover {
+        cursor: pointer;
+    }
+
+/*      INICIO      LAYUOT Inicio/Bienvenida*/
+#divWrapContenido div {
+    display: inline-block;
+}
+
+#divColumna1 {
+    width: 66%;
+    border-right: 2px solid #B3B3B3;
+    padding-left: 2%;
+    padding-right: 1%;
+}
+
+#divTitulo .h1 {
+    text-align: left;
+}
+
+#divColumna1 div {
+    display: block;
+}
+
+#divColumna1 #divBanner {
+    text-align: center;
+}
+
+    #divColumna1 #divBanner img {
+        width: 600px;
+        height: 150px;
+    }
+
+#divArticulo {
+    text-indent: 1em;
+    text-align: justify;
+    /*overflow-y:scroll;*/
+}
+
+#divColumna2 {
+    width: 28%;
+    padding-left: 1%;
+    padding-right: 1%;
+    /*background:#666666;*/
+}
+
+    #divColumna2 div {
+        display: block;
+        /*height:200px;*/
+        /*border:5px solid #C82B40;*/
+        /*margin-bottom:20px;*/
+        /*margin-top:10%;*/
+    }
+
+    #divColumna2 #divNav1 {
+        display: none;
+        height: 100px;
+        border-top: 2px solid #B3B3B3;
+        border-bottom: 2px solid #B3B3B3;
+    }
+
+    #divColumna2 #divNav2 {
+        border: 5px solid #0B2161;
+        padding: 10px;
+        color: #4D4D4D;
+    }
+
+        #divColumna2 #divNav2 .h2 {
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        #divColumna2 #divNav2 div {
+            display: block;
+            margin-top: 10px;
+        }
+
+            #divColumna2 #divNav2 div p {
+                margin: 0px;
+                padding: 0px;
+            }
+/*///// FIN      LAYUOT Inicio/Bienvenida*/
+
+/*      INICIO      MenuHelper*/
+.menuHelper {
+    /*position:absolute;
+    top:54px;
+    right:0px;*/
+    float: right;
+}
+
+    .menuHelper img {
+        cursor: pointer;
+    }
+/*      FIN      MenuHelper*/
+
+/* INICIO Posionar tabla de instancia a la derecha*/
+/*.lblTable {
+    width : 20%;
+}
+
+.tblFm, .lblTable  {
+    display: inline-block;
+	vertical-align: top;
+}
+
+#ContentPlaceHolder1_lblTabla, .tblFm {
+    display : inline-block;
+
+}*/
+/* FIN Posionar tabla de instancia a la derecha*/
+
+/*#divForm {
+    
+}
+    #divForm ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+        #divForm ul li{
+            margin:0px;
+            margin-bottom:10px;
+        }
+            #divForm>ul>li>label {
+                font-weight:bolder;
+                clear:both;
+            }*/
+
+legend {
+    font-size: 15px;
+    font-weight: bold;
+    color: #555555;
+}
+
+/*#divContenido fieldset {
+    display:inline-block;
+}*/
+
+/*Inicio color silver*/
+.silverColor {
+    color: #A4A4A4;
+}
+
+/*fin color silver*/
+
+/*INICIO --- Apliacados a proveedores-aspx*/
+
+/*INICIO ---- COLOCAR DOS DIV EN LINEA */
+
+#tablaPRoveedores, #DatosProveedoresUnir {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*FIN ---- COLOCAR DOS DIV EN LINEA */
+
+#tablaPRoveedores {
+    width: 63%;
+}
+
+#DatosProveedoresUnir {
+    width: 34%;
+}
+
+/*FIN --- Apliacados a proveedores-aspx*/
+
+/*INICIO estilo de noticia de inicio*/
+.titulo, .articulo {
+    font: large Palatino bold italic;
+}
+
+#divArticulo {
+    margin-right: 4%;
+}
+
+/*FIN estilo de noticia de inicio*/
+
+
+
+#btnBack {
+    width: 40px;
+}
+
+    #btnBack:hover {
+        cursor: pointer;
+    }
+
+#mceu_12-body {
+    z-index: 1;
+}
+
+#submenu {
+    z-index: 999;
+    position: absolute;
+    padding-top: 3px;
+}
+
+#ventana-flotante {
+    background: rgba(11, 7, 7, 0.2) url("img/load.gif") center no-repeat; /* Color de fondo */
+    position: absolute;
+    opacity: 0.8;
+    display: none;
+    z-index: 2000;
+}
+#searchTermSort {
+    margin-left: -25%;
+    overflow:hidden;
+}
+.cls_mpletras {
+    color: #333333;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.cls_mpletras:hover {
+    background-color: #333333;
+    color: white;
+}

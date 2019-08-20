@@ -1,0 +1,307 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MtrAdministrador.Master.cs" Inherits="Proveedores.MtrProveedor" %>
+
+<!DOCTYPE html>
+<%
+    Response.CacheControl = "Private";
+    Response.Expires = 0;
+%>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Portal proveedores</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%--<link rel="shortcut icon" href="http://www.arcacontal.com/images/thumbs/Favicon.ico">--%>
+
+    <link href="../css/Estilo.css" rel="stylesheet" />
+    <link href="../css/EstiloTabla.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../js/Estilo.js"></script>
+    <script src="../js/jquery.tablesorter.js"></script>
+
+    <%-- <link href="../css/DatePick_ltr.min.css" rel="stylesheet" />
+    <script src="../js/jsDatePick.min.1.3.js"></script>
+    <script src="../js/jsCalendarP.js"></script>--%>
+
+    <script src="../js/DeshabilitarClicDerecho.js"></script>
+    <script src="../js/addStyle.js"></script>
+
+    <script src="../js/ValidarCaracteresEntrada.js"></script>
+
+
+    <link href="../css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="../css/smoothness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+
+    <script src="../js/CargaAutomatica.js"></script>
+
+    <script>
+
+        $(function () {
+
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    return false;
+                }
+            });
+
+            $(window).resize(function() {
+                ancho = $(window).width();
+                alto = $(window).height();
+                $('#ventana-flotante').css({'width': ancho, 'height':alto})
+            });
+            $("#ContentPlaceHolder1_datepicker").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#ContentPlaceHolder1_datepicker2").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#ContentPlaceHolder1_datepicker2").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#ContentPlaceHolder1_datepicker").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+
+            $("#btnBloqDesBloqProveedores").click(function () {
+                document.location.href = "MostrarPertenencia.aspx?vinculador=Proveedores&campo=Proveedor&primerproveedor=me";
+            });
+
+            $("#ContentPlaceHolder1_lblDialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 500
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 500
+                }
+            });
+
+            //mostrarDialog();
+            $("#dialog-confirm").hide();
+            $("#ContentPlaceHolder1_lblDialog").hide();
+
+            $("#btnCerrarSesion").click(function () {
+                $("#ContentPlaceHolder1_hidCerrarSesion").val("cerrar");
+            });
+            
+            setInterval('MantenSesion()', <%= (int) (0.9 * (Session.Timeout * 60000)) %>);
+            
+
+        });
+
+        function mostrarDialog() {
+            
+            if ($("#ContentPlaceHolder1_lblDialog").text() != null && $("#ContentPlaceHolder1_lblDialog").text() != "") {
+                $("#ContentPlaceHolder1_lblDialog").dialog("open");
+            }
+        }
+
+        function MantenSesion() 
+        {                
+            var CONTROLADOR = "refresh_session.ashx";
+            var head = document.getElementsByTagName('head').item(0);            
+            script = document.createElement('script');            
+            script.src = CONTROLADOR ;
+            script.setAttribute('type', 'text/javascript');
+            script.defer = true;
+            head.appendChild(script);
+        } 
+  
+    </script>
+
+
+    <style>
+        body {
+            min-width: 1370px;
+        }
+
+
+        #menu li ul {
+            display: none;
+            position: absolute;
+        }
+
+        #menu > li {
+            width: 12em;
+        }
+
+        #menu li a {
+            display: block;
+        }
+
+        #menu li:hover > ul {
+            display: block;
+        }
+
+            #menu li:hover > ul li {
+                display: block;
+                /*margin-left: -2em;*/
+                width: 11em;
+            }
+
+        div.ui-dialog {
+            min-height: 100px;
+        }
+
+        .ui-dialog .ui-dialog-title {
+            color: #58ACFA;
+            font-size: 14px;
+        }
+
+        .ui-dialog .ui-dialog-content {
+            color: #6E6E6E;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        #divHeader img {
+            width: 150px;
+            height:63px;
+        }
+
+
+        /*///////////*/
+
+        /*#menu li:hover > ul li a:hover {
+            background:blue;
+        }*/
+
+        /*#menu li ul li.sub {
+            position:relative;
+        }
+
+         #menu li ul li ul {
+            
+            right:-200px;
+            top:0px;
+        }*/
+    </style>
+
+</head>
+<body>
+
+    <div id="dialog-confirm" title="¿Está seguro de continuar?">
+        <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Esta acción es de consideración, debe de estar seguro de continuar</p>
+    </div>
+
+    <form id="form1" runat="server">
+
+
+
+        <div id="divHeader">
+            <div class="left">
+                <img src="../images/logo_sanjacinto.png" />
+                <%--<img src="http://sf-solutionfactory.com/support/images/Solution_Logo.png" />--%>
+                <%--<img src="http://www.arcacontal.com/images/arca_logo.jpg" />--%>
+            </div>
+            <div id="wrapMenu" class="left">
+                <ul id="menu">
+                    <li id="config"><a><span>Configuración</span></a>
+                        <ul>
+                            <li class="sub"><a href="config.aspx"><span>Configuración</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="instancia"><a><span>Instancias SAP</span></a>
+                        <ul>
+                            <li class="sub"><a href="instancia.aspx"><span>Instancias</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="proveedor"><a><span>Proveedor</span></a>
+                        <ul id="submenu">
+                            <li class=""><a href="Proveedores.aspx"><span class="">Proveedor</span></a></li>
+                            <li class=""><a href="MostrarPertenencia.aspx?vinculador=Proveedores&campo=Proveedor&primerproveedor=me"><span>Activar y desactivar</span></a></li>
+                            <li class="sub"><a href="DesvincularGrupoProv.aspx"><span>Ver grupos</span></a></li>
+                            <li class="carga" id="cargaA"><a><span class="">Carga automatica...</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="Roles" class='last'><a><span>Roles</span></a>
+                        <ul>
+                            <li class="sub"><a href="Roles.aspx"><span>Roles</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="usuario"><a><span>Usuarios</span></a>
+                        <ul>
+                            <li class="sub"><a href="usuario.aspx"><span>Usuarios</span></a></li>
+                            <li class="sub"><a href="Seguridad.aspx"><span>Seguridad</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="noticia"><a><span>Noticias</span></a>
+                        <ul>
+                            <li class="sub"><a href="Noticia.aspx"><span>Noticias</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="grupoNoticia"><a><span>Grupo de noticia</span></a>
+                        <ul>
+                            <li class="sub"><a href="GrupoNoticia.aspx"><span>Grupo de noticia</span></a></li>
+                            <li class="sub"><a href="DesvincularGrupoNoticia.aspx"><span>Ver grupos</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li id="valXML"><a><span>Validaciones XML</span></a>
+                        <ul>
+                            <li class="sub"><a href='valXML.aspx'><span>Validaciones XML</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <%--<ul class="menuHelper">
+                    <li><img src="../images/ico-ayuda.png" /></li>
+                    <li><img src="../images/ico-descargar.png" /></li>
+                    <li><img src="../images/ico-imprimir.png" /></li>
+                </ul>--%>
+                <%--<div class="menuHelper">
+                    <img src="../images/ico-ayuda.png" />
+                    <img src="../images/ico-descargar.png" />
+                    <img src="../images/ico-imprimir.png" />
+                </div>--%>
+            </div>
+            <div id="divInfSesion">
+                <label>
+
+                    <asp:Label ID="lblUsuario" runat="server" Text="Administrador"></asp:Label>
+                    <%--<asp:Label ID="lblUsuarioAdmin" runat="server" Text="Label"></asp:Label>--%>
+                    <div id="divImgUsuario"></div>
+                </label>
+                <label>
+                    <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar sesión" OnClick="btnCerrarSesion_Click" CssClass="btnCerrarSesion" /><div id="divImgCandado"></div>
+                </label>
+            </div>
+        </div>
+        <div id="divContenido">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+   
+    <%--<div id="divFooter">
+        <div style="height: auto;">
+            <div id="left">
+                Arca Continental S.A.B. de C.V., Derechos reservados ©2012
+                <br>
+                Av. San Jerónimo 813 Pte. C.P. 64640, Monterrey, México
+            </div>
+            <div id="right">
+                <img src="http://www.arcacontal.com/images/AC_footer.jpg">
+                <img src="http://www.arcacontal.com/images/EmpresaSustentable_footer.jpg">
+                <img src="http://www.arcacontal.com/images/SocialmenteResponsable_footer.jpg">
+            </div>
+        </div>
+    </div>--%>
+     <div id="ventana-flotante">
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DelAndUpd.aspx.cs" Inherits="Proveedores.portal.DelAndUpd" %>

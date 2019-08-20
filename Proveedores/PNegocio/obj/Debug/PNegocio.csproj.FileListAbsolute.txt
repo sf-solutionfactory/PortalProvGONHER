@@ -1,0 +1,354 @@
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores v2-Ya sale el login\Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Proveedores release1\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Music\Proveedores release1\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Music\Proveedores release1\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Music\Proveedores release1\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Music\Proveedores release1\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Desktop\Programacion\Portal proveedores\Portal Proveedores_alpha_1 Eric\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_1 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores_alpha_2 General\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Desktop\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\WORK\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Portalproveedores\Visual Studio 2012\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Documents\Visual Studio 2012\Projects\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Usuario\Dropbox\ARCA Ticket 74\Visual Studio\Portal\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Martin-L\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Dropbox\Respaldo proveedores\Portal Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Proveedores Eric\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\JEMO-EZ\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Portal Tracusa\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Luis\Desktop\Tracusa PACK\Portales Tracusa\Nueva carpeta\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\Usuario\Documents\Visual Studio 2013\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF-0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0008\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal Tracusa\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal San Jacinto\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Respaldo adn\Portal Alimentro\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\SF0006\Documents\Visual Studio 2015\Projects\Gonher\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PNegocio.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PEntidades.dll.config
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\bin\Debug\PPersistencia.dll.config
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csproj.CoreCompileInputs.cache
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores 26 05 2015\PNegocio\obj\Debug\PNegocio.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.dll.config
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.dll.config
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CoreCompileInputs.cache
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Proyect\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csprojAssemblyReference.cache
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csprojResolveAssemblyReference.cache
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+E:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PEntidades.dll.config
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\bin\Debug\PPersistencia.dll.config
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csprojAssemblyReference.cache
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CoreCompileInputs.cache
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.pdb

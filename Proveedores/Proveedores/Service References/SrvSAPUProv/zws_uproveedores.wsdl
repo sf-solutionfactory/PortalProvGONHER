@@ -1,0 +1,1102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="urn:sap-com:document:sap:rfc:functions" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" targetNamespace="urn:sap-com:document:sap:rfc:functions" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="BN__ZWS_UPROVEEDORES">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__ZWS_UPROVEEDORES_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__ZWS_UPROVEEDORES">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
+          <sapcentraladmin:BusinessApplicationID>0A2394D0E1AE1EE7A28258880862EF61</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UFAC_VERIFMIR7">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UFAC_VERIFICAR">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UFAC_LISTPA">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UDATA_MASTER">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UFAC_CARGADAS">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UPAGOS">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_UPARTIDAS_ABIERTAS">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_URES_PROVEEDORES">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_URES_SOCIEDADES">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__Z_URFC">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char100">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="100" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char14">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="14" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char15">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="15" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char16">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="16" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char18">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="18" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char2">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char241">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="241" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char25">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="25" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char3">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char30">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="30" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char31">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="31" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char35">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="35" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char36">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="36" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char48">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="48" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char50">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char70">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="70" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="cuky5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr13.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="13" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr15.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="15" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="date10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+          <xsd:pattern value="\d\d\d\d-\d\d-\d\d" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="decimal20.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="20" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="lang">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric4">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="4" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="numeric5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+      <xsd:complexType name="ZELIFNR_PROV">
+        <xsd:sequence>
+          <xsd:element name="LIFNR" type="tns:char10" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZEDATA_MASTER">
+        <xsd:sequence>
+          <xsd:element name="LIFNR" type="tns:char10" />
+          <xsd:element name="TITLE_MEDI" type="tns:char15" />
+          <xsd:element name="NAME1" type="tns:char35" />
+          <xsd:element name="NAME2" type="tns:char35" />
+          <xsd:element name="SORT1" type="tns:char10" />
+          <xsd:element name="STREET" type="tns:char35" />
+          <xsd:element name="HOUSE_NUM1" type="xsd:unsignedByte" />
+          <xsd:element name="POST_CODE1" type="tns:char10" />
+          <xsd:element name="ADDR1_DATA" type="tns:char35" />
+          <xsd:element name="COUNTRY" type="tns:char3" />
+          <xsd:element name="NAMECOUNTRY" type="tns:char15" />
+          <xsd:element name="REGION" type="tns:char3" />
+          <xsd:element name="NAMEREGION" type="tns:char25" />
+          <xsd:element name="PO_BOX" type="tns:char10" />
+          <xsd:element name="POST_CODE2" type="tns:char10" />
+          <xsd:element name="LANGU" type="tns:lang" />
+          <xsd:element name="TEL_NUMBER" type="tns:char16" />
+          <xsd:element name="FAX_NUMBER" type="tns:char31" />
+          <xsd:element name="EXTENSION1" type="tns:char14" />
+          <xsd:element name="EXTENSION2" type="tns:char15" />
+          <xsd:element name="ZAHLS" type="tns:char1" />
+          <xsd:element name="TEXTL" type="tns:char20" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZEDATA_UUID">
+        <xsd:sequence>
+          <xsd:element name="UUID_XML" type="tns:char36" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZELISTA_PROVE">
+        <xsd:sequence>
+          <xsd:element name="ACREDOR" type="tns:char10" />
+          <xsd:element name="ACTIVO" type="tns:char1" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZEPLANT_PROV">
+        <xsd:sequence>
+          <xsd:element name="WERKS" type="tns:char4" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZEFACT_X_VERIF">
+        <xsd:sequence>
+          <xsd:element name="LIFNR" type="tns:char10" />
+          <xsd:element name="BUKRS" type="tns:char4" />
+          <xsd:element name="WRBTR" type="tns:curr13.2" />
+          <xsd:element name="EBELN" type="tns:char10" />
+          <xsd:element name="XBLNR2" type="tns:char16" />
+          <xsd:element name="WAERS" type="tns:cuky5" />
+          <xsd:element name="WERKS" type="tns:char4" />
+          <xsd:element name="CST_IND" type="tns:decimal20.2" />
+          <xsd:element name="IVA" type="tns:decimal20.2" />
+          <xsd:element name="MWSKZ" type="tns:char2" />
+          <xsd:element name="IMP_TOTAL" type="tns:char20" />
+          <xsd:element name="SALDO" type="tns:decimal20.2" />
+          <xsd:element name="LIGHTS" type="tns:char1" />
+          <xsd:element name="BUDAT" type="tns:date10" />
+          <xsd:element name="BLDAT" type="tns:date10" />
+          <xsd:element name="RETENCION" type="tns:decimal20.2" />
+          <xsd:element name="TGLACC" type="tns:curr13.2" />
+          <xsd:element name="FACT_SAT" type="tns:char100" />
+          <xsd:element name="FACT_SAP" type="tns:char100" />
+          <xsd:element name="INCIDENCIA" type="tns:string" />
+          <xsd:element name="TIPO" type="tns:char1" />
+          <xsd:element name="POSICION" type="tns:numeric5" />
+          <xsd:element name="TIPOLINEA" type="tns:char1" />
+          <xsd:element name="RFC_PROVEEDOR" type="tns:char16" />
+          <xsd:element name="RFC_SOC" type="tns:char48" />
+          <xsd:element name="ZCOUNT" type="xsd:int" />
+          <xsd:element name="MSG_VARIOS" type="tns:string" />
+          <xsd:element name="TXZ01" type="tns:char40" />
+          <xsd:element name="BELNR" type="tns:char10" />
+          <xsd:element name="BWTAR" type="tns:char10" />
+          <xsd:element name="KSCHL" type="tns:char4" />
+          <xsd:element name="MATNR" type="tns:char18" />
+          <xsd:element name="GJAHR" type="tns:numeric4" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZEPARTIDAS_ABIERTAS">
+        <xsd:sequence>
+          <xsd:element name="ZUONR" type="tns:char18" />
+          <xsd:element name="BELNR" type="tns:char10" />
+          <xsd:element name="BLART" type="tns:char2" />
+          <xsd:element name="BLDAT" type="tns:date10" />
+          <xsd:element name="DMSHB" type="tns:curr15.2" />
+          <xsd:element name="HWAER" type="tns:cuky5" />
+          <xsd:element name="TEXTL" type="tns:char20" />
+          <xsd:element name="FDTAG" type="tns:date10" />
+          <xsd:element name="AUGBL" type="tns:char10" />
+          <xsd:element name="XBLNR" type="tns:char16" />
+          <xsd:element name="KONTO" type="tns:char10" />
+          <xsd:element name="NAME1" type="tns:char70" />
+          <xsd:element name="SGTXT" type="tns:char50" />
+          <xsd:element name="EBELN" type="tns:char10" />
+          <xsd:element name="F_BASE" type="tns:date10" />
+          <xsd:element name="F_VENCIM" type="tns:date10" />
+          <xsd:element name="GJAHR" type="tns:numeric4" />
+          <xsd:element name="BUDAT" type="tns:date10" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZERES_USUARIOS">
+        <xsd:sequence>
+          <xsd:element name="STCEG" type="tns:char20" />
+          <xsd:element name="NAME1" type="tns:char35" />
+          <xsd:element name="LIFNR" type="tns:char10" />
+          <xsd:element name="SMTP_ADDR" type="tns:char241" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZERES_SOCIEDADES">
+        <xsd:sequence>
+          <xsd:element name="STCEG" type="tns:char20" />
+          <xsd:element name="LIFNR" type="tns:char10" />
+          <xsd:element name="BUKRS" type="tns:char4" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTLIFNR_PROV">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZELIFNR_PROV" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTDATA_MASTER">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZEDATA_MASTER" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTDATA_UUID">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZEDATA_UUID" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTELISTA_PROVE">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZELISTA_PROVE" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTPLANT_PROV">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZEPLANT_PROV" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTFACT_X_VERIF">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZEFACT_X_VERIF" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTPARTIDAS_ABIERTAS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZEPARTIDAS_ABIERTAS" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTRES_USUARIOS">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZERES_USUARIOS" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ZTRES_SOCIEDADES">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:ZERES_SOCIEDADES" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="Z_UDATA_MASTER">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PROVEEDOR" type="tns:ZTLIFNR_PROV" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UDATA_MASTERResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="DATOS_MAESTROS" type="tns:ZTDATA_MASTER" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_CARGADAS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="BELNR" type="tns:char10" />
+            <xsd:element minOccurs="0" name="BUKRS" type="tns:char4" />
+            <xsd:element minOccurs="0" name="BWTAR" type="tns:char10" />
+            <xsd:element minOccurs="0" name="CORREO" type="tns:char100" />
+            <xsd:element minOccurs="0" name="DESADJUNTAR" type="tns:char1" />
+            <xsd:element minOccurs="0" name="EBELN" type="tns:char10" />
+            <xsd:element minOccurs="0" name="EBELP" type="tns:numeric5" />
+            <xsd:element minOccurs="0" name="FECHA_XML" type="tns:date10" />
+            <xsd:element minOccurs="0" name="IMP_RETEN" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="KSCHL" type="tns:char4" />
+            <xsd:element minOccurs="0" name="LIFNR" type="tns:char10" />
+            <xsd:element minOccurs="0" name="MSJ_SAP" type="tns:char100" />
+            <xsd:element minOccurs="0" name="MSJ_SAT" type="tns:char100" />
+            <xsd:element minOccurs="0" name="PDFFILE" type="tns:char100" />
+            <xsd:element minOccurs="0" name="RAW" type="xsd:base64Binary" />
+            <xsd:element minOccurs="0" name="RAWPDF" type="xsd:base64Binary" />
+            <xsd:element minOccurs="0" name="STATUS" type="tns:char1" />
+            <xsd:element minOccurs="0" name="TIPO" type="tns:char1" />
+            <xsd:element minOccurs="0" name="TIPOARCHIVO" type="tns:char3" />
+            <xsd:element minOccurs="0" name="UUID_XML" type="tns:ZTDATA_UUID" />
+            <xsd:element minOccurs="0" name="WERKS" type="tns:char4" />
+            <xsd:element minOccurs="0" name="XBLNR" type="tns:char16" />
+            <xsd:element minOccurs="0" name="XMLFILE" type="tns:char100" />
+            <xsd:element minOccurs="0" name="ZCFDI_UUID" type="tns:char36" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_CARGADASResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="RESULT" type="tns:char50" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_LISTPA">
+        <xsd:complexType>
+          <xsd:sequence />
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_LISTPAResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IT_PROVACTIVOS" type="tns:ZTELISTA_PROVE" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_VERIFICAR">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CENTRO" type="tns:ZTPLANT_PROV" />
+            <xsd:element minOccurs="0" name="FACTURA_HIGH" type="tns:char10" />
+            <xsd:element minOccurs="0" name="FACTURA_LOW" type="tns:char10" />
+            <xsd:element minOccurs="0" name="F_COMPRA_HIGH" type="tns:char10" />
+            <xsd:element minOccurs="0" name="F_COMPRA_LOW" type="tns:char10" />
+            <xsd:element minOccurs="0" name="F_FAC_HIGH" type="tns:char10" />
+            <xsd:element minOccurs="0" name="F_FAC_LOW" type="tns:char10" />
+            <xsd:element minOccurs="0" name="MONEDA_HIGH" type="tns:cuky5" />
+            <xsd:element minOccurs="0" name="MONEDA_LOW" type="tns:cuky5" />
+            <xsd:element name="PROVEEDOR" type="tns:ZTLIFNR_PROV" />
+            <xsd:element minOccurs="0" name="P_BLOCK" type="tns:char1" />
+            <xsd:element minOccurs="0" name="P_ORDPED" type="tns:char1" />
+            <xsd:element minOccurs="0" name="P_ORDREF" type="tns:char1" />
+            <xsd:element minOccurs="0" name="REFERENCIA_HIGH" type="tns:char16" />
+            <xsd:element minOccurs="0" name="REFERENCIA_LOW" type="tns:char16" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_VERIFICARResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="IT_F_VERIFICAR" type="tns:ZTFACT_X_VERIF" />
+            <xsd:element name="MENSAJE" type="tns:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_VERIFMIR7">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="FECHA_FACT" type="tns:date10" />
+            <xsd:element name="FISYEAR" type="tns:numeric4" />
+            <xsd:element minOccurs="0" name="IMPORTE" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="IMPORTE_IVA" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="IMPORTE_SUB" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="IMP_DESCUEN" type="tns:curr13.2" />
+            <xsd:element minOccurs="0" name="MONEDA" type="tns:char20" />
+            <xsd:element name="NUM_DOC" type="tns:char10" />
+            <xsd:element minOccurs="0" name="VAL_FECH_FACT" type="tns:char1" />
+            <xsd:element minOccurs="0" name="VAL_IMPORTE" type="tns:char1" />
+            <xsd:element minOccurs="0" name="VAL_IMP_IVA" type="tns:char1" />
+            <xsd:element minOccurs="0" name="VAL_IMP_SUB" type="tns:char1" />
+            <xsd:element minOccurs="0" name="VAL_MONEDA" type="tns:char1" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UFAC_VERIFMIR7Response">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="MENSAJE" type="tns:char30" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UPAGOS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DATE1" type="tns:char10" />
+            <xsd:element minOccurs="0" name="DATE2" type="tns:char10" />
+            <xsd:element name="PROVEEDOR" type="tns:ZTLIFNR_PROV" />
+            <xsd:element name="SOCIEDAD" type="tns:ZTPLANT_PROV" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UPAGOSResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PAGOS" type="tns:ZTPARTIDAS_ABIERTAS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UPARTIDAS_ABIERTAS">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="DATE1" type="tns:char10" />
+            <xsd:element minOccurs="0" name="DATE2" type="tns:char10" />
+            <xsd:element name="PROVEEDOR" type="tns:ZTLIFNR_PROV" />
+            <xsd:element name="SOCIEDAD" type="tns:ZTPLANT_PROV" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_UPARTIDAS_ABIERTASResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="PARTIDAS_ABIERTAS" type="tns:ZTPARTIDAS_ABIERTAS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URES_PROVEEDORES">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="BUKRS" type="tns:char4" />
+            <xsd:element minOccurs="0" name="EXTRANJERO" type="tns:char1" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URES_PROVEEDORESResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ZTRES_USUARIOS" type="tns:ZTRES_USUARIOS" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URES_SOCIEDADES">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="BUKRS" type="tns:char4" />
+            <xsd:element minOccurs="0" name="EXTRANJERO" type="tns:char1" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URES_SOCIEDADESResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ZTRES_SOCIEDADES" type="tns:ZTRES_SOCIEDADES" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URFC">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SOCIEDAD" type="tns:char4" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Z_URFCResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="RFC" type="tns:char48" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Z_UDATA_MASTER">
+    <wsdl:part name="parameters" element="tns:Z_UDATA_MASTER" />
+  </wsdl:message>
+  <wsdl:message name="Z_UDATA_MASTERResponse">
+    <wsdl:part name="parameter" element="tns:Z_UDATA_MASTERResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_CARGADAS">
+    <wsdl:part name="parameters" element="tns:Z_UFAC_CARGADAS" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_CARGADASResponse">
+    <wsdl:part name="parameter" element="tns:Z_UFAC_CARGADASResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_LISTPA">
+    <wsdl:part name="parameters" element="tns:Z_UFAC_LISTPA" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_LISTPAResponse">
+    <wsdl:part name="parameter" element="tns:Z_UFAC_LISTPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_VERIFICAR">
+    <wsdl:part name="parameters" element="tns:Z_UFAC_VERIFICAR" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_VERIFICARResponse">
+    <wsdl:part name="parameter" element="tns:Z_UFAC_VERIFICARResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_VERIFMIR7">
+    <wsdl:part name="parameters" element="tns:Z_UFAC_VERIFMIR7" />
+  </wsdl:message>
+  <wsdl:message name="Z_UFAC_VERIFMIR7Response">
+    <wsdl:part name="parameter" element="tns:Z_UFAC_VERIFMIR7Response" />
+  </wsdl:message>
+  <wsdl:message name="Z_UPAGOS">
+    <wsdl:part name="parameters" element="tns:Z_UPAGOS" />
+  </wsdl:message>
+  <wsdl:message name="Z_UPAGOSResponse">
+    <wsdl:part name="parameter" element="tns:Z_UPAGOSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_UPARTIDAS_ABIERTAS">
+    <wsdl:part name="parameters" element="tns:Z_UPARTIDAS_ABIERTAS" />
+  </wsdl:message>
+  <wsdl:message name="Z_UPARTIDAS_ABIERTASResponse">
+    <wsdl:part name="parameter" element="tns:Z_UPARTIDAS_ABIERTASResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_URES_PROVEEDORES">
+    <wsdl:part name="parameters" element="tns:Z_URES_PROVEEDORES" />
+  </wsdl:message>
+  <wsdl:message name="Z_URES_PROVEEDORESResponse">
+    <wsdl:part name="parameter" element="tns:Z_URES_PROVEEDORESResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_URES_SOCIEDADES">
+    <wsdl:part name="parameters" element="tns:Z_URES_SOCIEDADES" />
+  </wsdl:message>
+  <wsdl:message name="Z_URES_SOCIEDADESResponse">
+    <wsdl:part name="parameter" element="tns:Z_URES_SOCIEDADESResponse" />
+  </wsdl:message>
+  <wsdl:message name="Z_URFC">
+    <wsdl:part name="parameters" element="tns:Z_URFC" />
+  </wsdl:message>
+  <wsdl:message name="Z_URFCResponse">
+    <wsdl:part name="parameter" element="tns:Z_URFCResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ZWS_UPROVEEDORES">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__ZWS_UPROVEEDORES" />
+    </wsp:Policy>
+    <wsdl:operation name="Z_UDATA_MASTER">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UDATA_MASTER" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UDATA_MASTER" />
+      <wsdl:output message="tns:Z_UDATA_MASTERResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_CARGADAS">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UFAC_CARGADAS" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UFAC_CARGADAS" />
+      <wsdl:output message="tns:Z_UFAC_CARGADASResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_LISTPA">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UFAC_LISTPA" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UFAC_LISTPA" />
+      <wsdl:output message="tns:Z_UFAC_LISTPAResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFICAR">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UFAC_VERIFICAR" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UFAC_VERIFICAR" />
+      <wsdl:output message="tns:Z_UFAC_VERIFICARResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFMIR7">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UFAC_VERIFMIR7" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UFAC_VERIFMIR7" />
+      <wsdl:output message="tns:Z_UFAC_VERIFMIR7Response" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPAGOS">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UPAGOS" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UPAGOS" />
+      <wsdl:output message="tns:Z_UPAGOSResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_UPARTIDAS_ABIERTAS" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_UPARTIDAS_ABIERTAS" />
+      <wsdl:output message="tns:Z_UPARTIDAS_ABIERTASResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_PROVEEDORES">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_URES_PROVEEDORES" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_URES_PROVEEDORES" />
+      <wsdl:output message="tns:Z_URES_PROVEEDORESResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_SOCIEDADES">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_URES_SOCIEDADES" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_URES_SOCIEDADES" />
+      <wsdl:output message="tns:Z_URES_SOCIEDADESResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Z_URFC">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__Z_URFC" />
+      </wsp:Policy>
+      <wsdl:input message="tns:Z_URFC" />
+      <wsdl:output message="tns:Z_URFCResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZWS_UPROVEEDORES" type="tns:ZWS_UPROVEEDORES">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_UPROVEEDORES" />
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_UDATA_MASTER">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_CARGADAS">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_LISTPA">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFICAR">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFMIR7">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPAGOS">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_PROVEEDORES">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_SOCIEDADES">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URFC">
+      <soap:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZWS_UPROVEEDORES_soap12" type="tns:ZWS_UPROVEEDORES">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__ZWS_UPROVEEDORES_soap12" />
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Z_UDATA_MASTER">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UDATA_MASTERRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_CARGADAS">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_CARGADASRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_LISTPA">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_LISTPARequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFICAR">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFICARRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UFAC_VERIFMIR7">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UFAC_VERIFMIR7Request" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPAGOS">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPAGOSRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_UPARTIDAS_ABIERTAS">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_UPARTIDAS_ABIERTASRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_PROVEEDORES">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_PROVEEDORESRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URES_SOCIEDADES">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URES_SOCIEDADESRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Z_URFC">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:rfc:functions:ZWS_UPROVEEDORES:Z_URFCRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZWS_UPROVEEDORES">
+    <wsdl:port name="ZWS_UPROVEEDORES" binding="tns:ZWS_UPROVEEDORES">
+      <soap:address location="http://Devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores" />
+    </wsdl:port>
+    <wsdl:port name="ZWS_UPROVEEDORES_soap12" binding="tns:ZWS_UPROVEEDORES_soap12">
+      <wsoap12:address location="http://Devawssc01.sicsa.proatech.mx:8000/sap/bc/srt/rfc/sap/zws_uproveedores/100/zws_uproveedores/zws_uproveedores" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

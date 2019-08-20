@@ -1,0 +1,228 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MtrProveedor.master.cs" Inherits="Proveedores.MtrProveedor" %>
+
+<!DOCTYPE html>
+<%
+    Response.CacheControl = "Private";
+    Response.Expires = 0;
+%> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Portal proveedores</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="../css/Estilo.css" rel="stylesheet" />
+    <link href="../css/EstiloTabla.css" rel="stylesheet" />
+
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../js/Estilo.js"></script>
+    <script src="../js/jquery.tablesorter.js"></script>
+    <script src="../js/DeshabilitarClicDerecho.js"></script>
+
+    <script src="../js/addStyle.js"></script>
+
+    <link href="../css/smoothness/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="../css/smoothness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" />
+
+    <script>
+        $(function () {
+
+            $(document).keypress(function (e) {
+                if (e.which == 13) {
+                    return false;
+                }
+            });
+
+            var ancho = $(window).width();
+            var alto = $(window).height();
+
+            $('#cargaA').click(function () {
+                $('#ventana-flotante').show();
+            });
+
+            $(window).resize(function() {
+                ancho = $(window).width();
+                alto = $(window).height();
+                $('#ventana-flotante').css({'width': ancho, 'height':alto})
+            });
+
+            $("#ContentPlaceHolder1_datepicker, .datepicker ").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#ContentPlaceHolder1_datepicker2, .datepicker2").datepicker("option", "minDate", selectedDate);
+                }
+            });
+            $("#ContentPlaceHolder1_datepicker2, .datepicker2").datepicker({
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 3,
+                onClose: function (selectedDate) {
+                    $("#ContentPlaceHolder1_datepicker, .datepicker").datepicker("option", "maxDate", selectedDate);
+                }
+            });
+
+            $.fn.setMenuItemFocused = function () {
+                $(this).addClass("active");
+            }
+
+
+            $("#ContentPlaceHolder1_lblDialog").dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 500
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 500
+                }
+            });
+
+            $("#dialog-confirm").hide();
+            $("#ContentPlaceHolder1_lblDialog").hide();
+
+            $("#btnCerrarSesion").click(function () {
+                $("#ContentPlaceHolder1_hidCerrarSesion").val("cerrar");
+            });
+
+                    $("table.sortTable").tablesorter({ debug: true });  
+      
+            setInterval('MantenSesion()', <%= (int) (0.9 * (Session.Timeout * 60000)) %>);
+        });
+
+        function mostrarDialog() {
+            if ($("#ContentPlaceHolder1_lblDialog").text() != null && $("#ContentPlaceHolder1_lblDialog").text() != "") {
+                $("#ContentPlaceHolder1_lblDialog").dialog("open");
+            }
+            function cerrarventana(){
+                $('#ventana-flotante').hide();
+            }
+        }
+    </script>
+    
+    <style>
+         #menu li ul {
+            display:none;
+            position:absolute;
+        }
+
+        #menu li a {
+            display:block;
+            
+        }
+
+        #menu li:hover > ul {
+            display:block;
+           
+        }
+
+        #menu li:hover > ul li {
+            display:block;
+            /*margin-left: -2em;*/
+            width:11em;
+  
+        }
+
+        div.ui-dialog {
+            min-height: 100px;
+        }
+
+        .ui-dialog .ui-dialog-title {
+            color: #58ACFA;
+            font-size: 14px;
+        }
+
+        .ui-dialog .ui-dialog-content {
+            color: #6E6E6E;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .ico-actualizar:hover {
+            cursor:pointer;
+        }
+
+        #divHeader img {
+            width: 150px;
+            height:63px;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+
+
+
+    <form id="form1" runat="server">
+        <div id="divHeader">
+            <div class="left">
+                <%--<img src="http://www.arcacontal.com/images/arca_logo.jpg" />--%>
+                <%--<img src="../images/Solution_Logo.png" />--%>
+                <img src="../images/logo_sanjacinto.png" />
+                <%--<img src="http://sf-solutionfactory.com/support/images/Solution_Logo.png" />--%>
+                
+            </div>
+            <div id="wrapMenu" class="left">
+                <ul id="menu">
+                    <asp:Literal ID="lblMenu" runat="server"></asp:Literal>
+                </ul>
+            </div>
+            <div id="divInfSesion">
+                <label>
+                    <asp:Label ID="lblUsuario" runat="server"></asp:Label><div id="divImgUsuario"></div>
+                </label>
+                <label>
+                    <asp:Button ID="btnCerrarSesion" runat="server" Text="Cerrar sesión" OnClick="btnCerrarSesion_Click" CssClass="btnCerrarSesion" /><div id="divImgCandado"></div>
+                </label>
+            </div>
+
+
+
+        </div>
+        <div id="divContenido">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div id="divFooter">
+        <div style="height: auto;">
+            <div id="left">
+                Grupo San Jacinto
+                <%--Soluction Factory--%>
+                <br/>
+                Aguascalientes 134
+                 <%--Av. Hacienda del Rosario 117--%>
+                <br/>
+                S.t.e.m.a., Aguascalientes, Ags., 
+                 <%--Real de Bugambilias, León, Gto.--%>
+                <br/>
+                <%--Telefono: (+52) 477 718.6219--%>
+                Teléfono:
+            </div>
+            <div id="right">
+                <%--<img src="http://www.arcacontal.com/images/AC_footer.jpg">
+                <img src="http://www.arcacontal.com/images/EmpresaSustentable_footer.jpg">
+                <img src="http://www.arcacontal.com/images/SocialmenteResponsable_footer.jpg">--%>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog-confirm" title="¿Está seguro de continuar?">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Esta acción es de consideración, debe de estar seguro de continuar</p>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+﻿        /*.idProv{
+			fot-weight: bolder;
+			color:gray;
+			clear:both;
+		}*/
+		.desc{
+			color:#040404;
+			clear:both;
+		}
+
+        #lblSentTableSelected2 {
+            width: 30px;
+            float : left; 
+            margin-left: 75%; 
+             position : fixed;       
+        }
+
+        #scrolltable {
+            margin-left: 15%;
+            /*background: #eeeeee;*/ 
+             width: 350px;
+            /*overflow-x:hidden!important;
+            scrolling:"no";
+            overflow: auto; 
+            padding-right: 15px; 
+            padding-top: 15px;
+            padding-left: 15px; 
+            padding-bottom: 15px; 
+            border-right: #6699CC 1px solid;
+            border-top: #999999 1px solid;
+            border-left: #6699CC 1px solid;
+            border-bottom: #6699CC 1px solid;
+            scrollbar-arrow-color: #999999;
+            scrollbar-face-color: #666666;
+            scrollbar-track-color: #3333333;
+            width: 350px;
+            height: 300px; 
+            left: 100;
+            top: 20;*/
+        }
+
+        /*#sortable2 {
+            position : fixed;
+            float: right;
+             margin-left: 10%;
+             min-height: 20px;
+        }*/
+
+        #divNoticiasExitentes {
+            float: right;
+            width: 40px;
+            height: 300px;
+            /*background-color: red;*/
+            padding:5px;
+            word-wrap: break-word;
+             text-align: center;
+             font: 20px bold sans-serif; 
+        }
+
+        #btnSubmit {
+            margin-left: 45%;   
+           
+        }
+
+        /*.idProv {
+            width: 10em;
+        }*/
+
+        /*.tituloSortNum, .idProv {
+            width: 100px;
+            margin-right:3em;
+        }*/
+
+         /*.tituloSort,.DivSort {
+            width: 220px;
+         }*/
+        
+
+        .tituloSort, .DivSort {
+            /*background:blue;*/
+        }
+
+        .tituloSortNum, .tituloSort {
+            /*background:red;*/
+        }
+
+        
+
+        
+
+        

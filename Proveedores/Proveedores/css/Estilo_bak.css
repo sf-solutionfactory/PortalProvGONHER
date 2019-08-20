@@ -1,0 +1,172 @@
+﻿* {
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    clear:both;
+    width:100%;
+    border: 6px -100px 3px 3px solid white;
+    border-bottom: 2px solid #CC0202;
+    background-color:white;
+
+}
+
+    header #infSesion {
+        padding:5px;
+        float:right;
+        color: #CC0202;
+        text-align:right;
+        font-size: small;
+    }
+
+nav {
+    float: left;
+    clear:left;
+    margin: 3px;
+}
+#wrap {
+	min-height: 100%; 
+} 
+#main { 
+	padding-bottom: 50px;
+}
+#contenido {
+    float:left;
+    margin: 3px;
+    padding: 3px;
+    width:86%;
+}
+
+    #contenido h2 {
+        color:#CC0202;
+    }
+
+    #contenido p {
+        margin:5px;
+        padding:2px;
+    }
+
+#lblFecha {
+    font-size:small;
+}
+
+footer {
+    font-size:smaller;
+    line-height:50px;
+    position: relative; 
+	margin-top: -50px;
+	height: 50px; 
+	clear: both; 
+	background: #D7D8DA; 
+	text-align: right; 
+	color:#D01313;
+    background-color:#343131;
+}
+
+    footer img {
+        float: left;
+        margin:10px;
+        height: 30px;
+    }
+
+.lblDM {
+    color: #D01313;
+    border-left:3px dotted #CC0202;
+    padding-left:3px;
+}
+
+
+
+#btnCerrarSesion {
+    font-size:smaller;
+}
+
+#cssmenu ul li:first-child {
+    text-align:center;
+    background-color: white;
+    color: #D01313;
+    cursor:default;
+    font-weight:bolder;
+}
+    #cssmenu ul li:first-child a {
+        color: #D01313;
+        cursor:inherit;
+    }
+
+    #cssmenu ul li:first-child:hover {
+        background-color: white;
+        color:#D01313;
+        border-left: 3px solid #D7D8DA;
+    }
+/* Estilo para los semaforos -----------------------------------------------------------------------*/
+.semRojo {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:red;
+    color:white;
+}
+.semAmarillo {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:yellow;
+    color:black;
+}
+.semVerde {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color:green;
+    color:white;
+}
+
+/*Estilo para el fileChooser ---------- */
+.custom-input-file {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid #CC0202;
+    border-radius: 5px;
+    background-color: #F0F0F0;
+    color: #aaa;
+    text-align: center;
+    font-family: verdana;
+    font-size: 12pt;
+    width: 200px;
+    min-height: 40px;
+    margin:30px;
+}
+.custom-input-file:hover {
+    background-color: #F2F2F2;
+    color: #CC0202;
+}
+.custom-input-file .input-file {
+    margin: 0;
+    padding: 0;outline:0;
+    font-size: 10000px;
+    border: 10000px solid transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
+    cursor: pointer;
+}
+.custom-input-file .archivo {
+    background-color: #aaa;
+    color: #555;  
+    font-size: 7pt;
+    overflow: hidden;
+    border-radius:4px;
+}
+.custom-input-file:hover .archivo {
+ 
+    background-color: #0077B6;
+    color: white;
+}
+/*Fin de estilo para filechooser*/

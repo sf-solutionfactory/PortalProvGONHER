@@ -1,0 +1,341 @@
+/*
+    Autor : Luis Jesús CAstro Guerrero
+    Fecha : lunes 10 de marzo 2014, 9:39 AM.
+*/
+.columna-numerica{
+    text-align:right;
+}
+
+.tblComun{
+    border-collapse: collapse;
+    border:none;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top:10px;
+}
+    
+    .tblComun thead tr th { /* ENCABEZADOS */
+        height: 35px;
+        background: url(images/filtrar_15x15.png) no-repeat right bottom #0B2161;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 11px;
+        border-bottom:5px solid #FFFFFF;
+        cursor:pointer;
+    }
+
+    .tblComun tbody tr:hover {
+        /*background:blue;*/
+        cursor: pointer;
+    }
+
+    /*.td-par-hover{
+            background: #BDBDBD;
+        }
+    .td-impar-hover{
+            background: #A4A4A4;
+        }*/
+
+
+    
+    .tblComun tbody tr td{  /* CUERPO */
+        height:30px;
+
+        border-left: 5px solid #FFFFFF;
+        border-bottom: 5px solid #FFFFFF;
+
+        color: #333333;
+    }
+        .tblComun tr th:first-child,
+        .tblComun tr td:first-child{
+            border-left: 0px;
+        }
+        .td-par{
+            background: #CCCCCC;
+        }
+        .td-impar{
+            background: #B3B3B3;
+        }
+        
+/*      FIN     Tabla Comun     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*      INICIO      Tabla Campo-valor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.tblCV{
+    width: 100%;
+    /*height: 100%;*/
+    border-collapse: collapse;
+    border:3px solid #0B2161;
+    border-bottom: none;
+}
+    .tblCV-ValImpar{
+        background: #FFFFFF;
+    }
+    .tblCV-ValPar{
+        background: #B3B3B3;
+    }
+    
+    .tblCV-CamImpar{
+        /*background: #C82B40;*/
+        background: #0B2161;
+        color: #FFFFFF;
+    }
+    .tblCV-CamPar{
+        /*background: #D66070;*/
+        color: #000000;
+        /*background: #81BEF7;*/
+        background: #FFFFFF;
+        
+        
+    }
+    
+    .tblCV tr td:first-child{
+        /*color: #FFFFFF;*/
+        font-weight: bold;
+        padding: 3px;
+        text-align: right;
+    }
+/*      FIN     Tabla Campo-valor ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*      INICIO      Tabla Facturas      ***************************************/
+.tblFact{
+    
+}
+
+    .tblFact .factDescripcion{
+        width: 150px;
+    }
+
+    
+/*      FIN     Tabla Facturas      ***************************************/
+
+
+.kz {
+    background:red;
+    border:5px solid red;
+}
+.kz td {
+    /*border-bottom:5px solid red;*/
+    border:none;
+    border:5px 2.5px 5px solid white;
+}
+
+.e {
+    background:#A9BCF5;
+    border:5px solid #A9BCF5;
+}
+.e td {
+    /*border-bottom:5px solid red;*/
+    border:none;
+    border:5px 2.5px 5px solid white;
+}
+
+/*.fondoGris {
+     background:#B3B3B3;
+     border:5px solid #B3B3B3;
+}*/
+
+.validacionIconos {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    border:0px;
+    width:300px;
+    height:300px;
+}
+.validacionIconos li{
+    border:2px dotted #000000;
+    margin:0px;
+    padding:0px;
+}
+.validacionIconos>li{
+    display:block;
+}
+    .validacionIconos > li > ul {
+        margin:0px;
+        padding:0px;
+        border:0px;
+        list-style:none;
+    }
+        .validacionIconos>li>ul>li{
+            display:inline-block;
+            width:35px;
+            height:50px;
+            padding:0px;
+            margin:0px;
+        }
+    .validacionIconos>li>ul>li>img {
+        width:35px;
+    }
+
+
+/*      INICIO      Tablas de datos maestrso*/
+.datMtrWrap {
+    width:100%;
+    margin-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+    border-bottom:2px solid #B3B3B3;
+}
+.datMtrWrap table{
+    display:inline-block;
+    margin-top:20PX;
+    padding-left:1%;
+    padding-right:2%;
+    border-left: 2px solid #B3B3B3;
+}
+    .datMtrWrap table:first-child {
+        /*padding-left:0px;*/
+        border-left: none;
+    }
+
+.tblDatMtr {
+
+}
+
+    .tblDatMtr tbody > tr > td {
+        color: #4D4D4D;
+        text-align:left;
+        font-weight:bolder;
+        padding-top:10px;
+    }
+    .tblDatMtr tbody > tr > td:first-child {
+        color: #808080;
+        text-align:right;
+
+    } 
+
+/*///// FIN      Tablas de datos maestrso*/
+
+/*      INICIO      Tablas de datos maestrso*/
+.datMtrWrap {
+    width:100%;
+    margin-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+    border-bottom:2px solid #B3B3B3;
+}
+.datMtrWrap table{
+    display:inline-block;
+    margin-top:20PX;
+    padding-left:1%;
+    padding-right:2%;
+    border-left: 2px solid #B3B3B3;
+}
+    .datMtrWrap table:first-child {
+        /*padding-left:0px;*/
+        border-left: none;
+    }
+
+.tblDatMtr {
+
+}
+
+    .tblDatMtr > tr > td {
+        color: #4D4D4D;
+        text-align:left;
+        font-weight:bolder;
+        padding-top:10px;
+    }
+    .tblDatMtr > tr > td:first-child {
+        color: #808080;
+        text-align:right;
+
+    } 
+
+/*///// FIN      Tablas de datos maestrso*/
+
+
+.tblFm tr td{
+    
+}
+    .tblFm tr td:first-child {
+        font-weight: bolder;
+        min-width:180px;
+        color:#666666;
+    }
+
+    .tblFm [type="password"],
+    .tblFm [type="text"],
+    .tblFm textarea
+    
+     {
+        width:300px;
+        margin-left:3px;
+    }
+
+.tblFm select
+{
+    min-width:300px;
+    min-height:400px;
+}
+
+.tblFm2 tr td{
+    
+}
+
+    .tblFm2 tr td:first-child {
+        font-weight: bolder;
+        min-width:180px;
+        color:#000000;
+    }
+
+    .tblFm2 [type="password"],
+    .tblFm2 [type="text"],
+    .tblFm2 textarea,
+    .tblFm2 select
+     {
+        width:300px;
+        margin-left:3px;
+    }
+
+.tblFm3 tr td:first-child {
+        min-width:200px;
+        
+    }
+
+/*Inicio posiciona dos tablas*/
+ 
+
+.tablauno{
+    width:46%;
+    height:100%;
+    position:relative;
+    float: left;
+    height: auto;
+    margin-right: 10px;
+}
+.tablados{
+    
+    width:46%;
+    height:100%;
+    position:relative;
+    float: left;
+    height: auto;
+}
+
+/*Inicio posiciona dos tablas*/
+
+
+    /* INICIO posicionn de tabla de filtro*/
+    
+       
+          
+    /* FIN posicionn de tabla de filtro*/
+
+    /*INICIO plus de estilos */
+
+
+/*FIN plus de estilos */
+
+/*INICIO ocultar celdas de tabla*/
+.tHide {
+        display:none;
+        }
+/*FIN ocultar celdas de tabla*/
+
+
+/*INICIO estilo para el hover de la fila*/
+.td-hover{
+            background: #A9D0F5;
+        }
