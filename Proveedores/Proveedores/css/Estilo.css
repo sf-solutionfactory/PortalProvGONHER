@@ -57,7 +57,11 @@ html {
     font-size: 10px;
     font-weight: normal;
     min-height: 60px;
-    padding: 20px, 20px, 10px, 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding: 20px, 20px, 10px, 10px;
     /* marco error, así q puse todo en una instruccion  MGV - may.2018
     padding-top: 10px;
     padding-bottom: 10px;

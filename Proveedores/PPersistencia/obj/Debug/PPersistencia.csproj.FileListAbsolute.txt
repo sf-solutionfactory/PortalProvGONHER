@@ -291,3 +291,14 @@ D:\SAP\Portal Prov\Portal Gonher\Proveedores\PPersistencia\obj\Debug\PPersistenc
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PPersistencia\obj\Debug\PPersistencia.csproj.CopyComplete
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PPersistencia\obj\Debug\PPersistencia.dll
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PPersistencia\obj\Debug\PPersistencia.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PPersistencia.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PPersistencia.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PPersistencia.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PEntidades.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PEntidades.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\bin\Debug\PEntidades.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\obj\Debug\PPersistencia.csprojAssemblyReference.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\obj\Debug\PPersistencia.csproj.CoreCompileInputs.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\obj\Debug\PPersistencia.csproj.CopyComplete
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\obj\Debug\PPersistencia.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PPersistencia\obj\Debug\PPersistencia.pdb

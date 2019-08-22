@@ -179,6 +179,7 @@
     <Content Include="css\blitzer\jquery-ui-1.10.3.custom.min.css" />
     <Content Include="css\EstiloLogin.css" />
     <Content Include="css\Estilo.css" />
+    <Content Include="css\EstiloLogin2.css" />
     <Content Include="css\EstiloSortTables.css" />
     <Content Include="css\EstiloTabla.css" />
     <Content Include="css\images\cargar_xml_2.png" />
@@ -287,22 +288,6 @@
     <Content Include="css\passSeguro\stylePassSeguro.css" />
     <Content Include="css\passSeguro\ValidaPassSeguro.js" />
     <Content Include="css\saw2.jpg" />
-    <Content Include="css\smoothness\images\animated-overlay.gif" />
-    <Content Include="css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="css\smoothness\images\ui-icons_222222_256x240.png" />
-    <Content Include="css\smoothness\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="css\smoothness\images\ui-icons_454545_256x240.png" />
-    <Content Include="css\smoothness\images\ui-icons_888888_256x240.png" />
-    <Content Include="css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="css\smoothness\jquery-ui-1.10.4.custom.css" />
-    <Content Include="css\smoothness\jquery-ui-1.10.4.custom.min.css" />
     <Content Include="css\SortableGrupoNoticia.css" />
     <Content Include="css\SortTable.css" />
     <Content Include="errorGenerico.html" />
@@ -910,6 +895,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\smoothness\" />
     <Folder Include="portal\Files\" />
   </ItemGroup>
   <ItemGroup>

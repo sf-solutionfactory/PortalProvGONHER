@@ -206,3 +206,9 @@ D:\SAP\Portal Prov\Portal Gonher\Proveedores\PEntidades\obj\Debug\PEntidades.csp
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PEntidades\obj\Debug\PEntidades.csproj.CoreCompileInputs.cache
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PEntidades\obj\Debug\PEntidades.dll
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PEntidades\obj\Debug\PEntidades.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\bin\Debug\PEntidades.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\bin\Debug\PEntidades.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\bin\Debug\PEntidades.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\obj\Debug\PEntidades.csproj.CoreCompileInputs.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\obj\Debug\PEntidades.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PEntidades\obj\Debug\PEntidades.pdb

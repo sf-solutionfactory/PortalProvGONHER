@@ -352,3 +352,16 @@ D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.dll
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\PNegocio\obj\Debug\PNegocio.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PNegocio.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PNegocio.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PEntidades.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PPersistencia.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PEntidades.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PEntidades.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PPersistencia.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\bin\Debug\PPersistencia.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\obj\Debug\PNegocio.csprojAssemblyReference.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CoreCompileInputs.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\obj\Debug\PNegocio.csproj.CopyComplete
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\obj\Debug\PNegocio.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\PNegocio\obj\Debug\PNegocio.pdb

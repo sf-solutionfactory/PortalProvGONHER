@@ -1481,3 +1481,45 @@ D:\SAP\Portal Prov\Portal Gonher\Proveedores\Proveedores\obj\Debug\Proveedores.c
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\Proveedores\obj\Debug\Proveedores.csproj.CopyComplete
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\Proveedores\obj\Debug\Proveedores.dll
 D:\SAP\Portal Prov\Portal Gonher\Proveedores\Proveedores\obj\Debug\Proveedores.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Proveedores.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Proveedores.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Proveedores.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Antlr3.Runtime.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\ClosedXML.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DocumentFormat.OpenXml.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.Core.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\EntityFramework.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PEntidades.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PNegocio.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\System.Web.Optimization.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\System.Web.Providers.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\WebGrease.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PPersistencia.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PEntidades.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PEntidades.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PNegocio.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\ClosedXML.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\EntityFramework.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.Core.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PPersistencia.pdb
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\PPersistencia.dll.config
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\es\EntityFramework.resources.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\es\System.Web.Optimization.resources.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\bin\es\System.Web.Providers.resources.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\obj\Debug\Proveedores.csprojAssemblyReference.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\obj\Debug\Proveedores.csproj.CoreCompileInputs.cache
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\obj\Debug\Proveedores.csproj.CopyComplete
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\obj\Debug\Proveedores.dll
+C:\Users\mgvjn\Documents\GitHub\PortalProvGONHER\Proveedores\Proveedores\obj\Debug\Proveedores.pdb
